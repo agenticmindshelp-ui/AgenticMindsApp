@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple and transparent pricing for AgenticMinds courses. Choose the plan that fits your learning goals and budget.">
+    <meta name="keywords" content="AI course pricing, machine learning training cost, affordable AI education">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agenticminds.com/pages/pricing.html">
+    <title>Pricing Plans - AgenticMinds | Affordable AI Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <style>
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+        .pricing-card {
+            border: 2px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .pricing-card.featured {
+            border-color: var(--primary-green);
+            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.2);
+            transform: scale(1.05);
+        }
+        .pricing-card.featured::before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .pricing-card h3 {
+            margin-bottom: 15px;
+        }
+        .pricing-card .price {
+            font-size: 3rem;
+            color: var(--primary-green);
+            font-weight: 700;
+            margin: 20px 0 10px;
+        }
+        .pricing-card .price span {
+            font-size: 0.5em;
+            color: var(--medium-gray);
+        }
+        .pricing-card ul {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .pricing-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-gray);
+            color: var(--light-gray);
+        }
+        .pricing-card li:before {
+            content: "✓";
+            color: var(--primary-green);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Level Menu -->
+    <div style="background-color: var(--card-bg); border-bottom: 1px solid var(--border-gray); padding: 12px 20px;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-phone" style="color: var(--primary-green);"></i>
+                    <a href="tel:+1234567890" style="color: var(--light-gray); text-decoration: none;">+1 (234) 567-890</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-envelope" style="color: var(--primary-green);"></i>
+                    <a href="mailto:info@agenticminds.com" style="color: var(--light-gray); text-decoration: none;">info@agenticminds.com</a>
+                </div>
+            </div>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AgenticMinds</div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section style="background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(34, 197, 94, 0.1) 100%); color: var(--white); padding: 80px 20px; text-align: center; border-bottom: 2px solid var(--primary-green);">
+        <div class="container">
+            <h1 style="color: var(--white); margin-bottom: 20px;">Simple, Transparent Pricing</h1>
+            <p style="color: var(--light-gray); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Choose the plan that fits your goals. All courses include lifetime access and 30-day money back guarantee.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section>
+        <div class="container">
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="text-secondary">Perfect for beginners</p>
+                    <div class="price">$99<span>/month</span></div>
+                    <ul>
+                        <li>Access to 5 beginner courses</li>
+                        <li>Community forum access</li>
+                        <li>Email support</li>
+                        <li>Monthly content updates</li>
+                        <li>Certificate of completion</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Professional</h3>
+                    <p class="text-secondary">For career advancement</p>
+                    <div class="price">$199<span>/month</span></div>
+                    <ul>
+                        <li>Access to all 100+ courses</li>
+                        <li>Private community & networking</li>
+                        <li>Priority email & chat support</li>
+                        <li>Weekly live Q&A sessions</li>
+                        <li>Professional certificates</li>
+                        <li>Career coaching (monthly)</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="text-secondary">For organizations</p>
+                    <div class="price">Custom<span>/pricing</span></div>
+                    <ul>
+                        <li>Team licensing (10+ seats)</li>
+                        <li>Custom curriculum design</li>
+                        <li>Dedicated account manager</li>
+                        <li>Advanced analytics & reporting</li>
+                        <li>LMS integration</li>
+                        <li>24/7 priority support</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 50px;">Frequently Asked Questions</h2>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div style="background: var(--white); padding: 25px; margin-bottom: 20px; border-radius: 8px;">
+                    <h4 style="margin-top: 0;">Can I cancel anytime?</h4>
+                    <p class="text-secondary" style="margin-bottom: 0;">Yes! You can cancel your subscription at any time. No questions asked.</p>
+                </div>
+                <div style="background: var(--white); padding: 25px; margin-bottom: 20px; border-radius: 8px;">
+                    <h4 style="margin-top: 0;">Do you offer refunds?</h4>
+                    <p class="text-secondary" style="margin-bottom: 0;">We offer a 30-day money back guarantee. If you're not satisfied, we'll refund your payment.</p>
+                </div>
+                <div style="background: var(--white); padding: 25px; margin-bottom: 20px; border-radius: 8px;">
+                    <h4 style="margin-top: 0;">Can I upgrade or downgrade?</h4>
+                    <p class="text-secondary" style="margin-bottom: 0;">Absolutely! You can change your plan at any time. We'll pro-rate the cost accordingly.</p>
+                </div>
+                <div style="background: var(--white); padding: 25px; border-radius: 8px;">
+                    <h4 style="margin-top: 0;">Is there a free trial?</h4>
+                    <p class="text-secondary" style="margin-bottom: 0;">Yes! All Professional plans come with a 7-day free trial. No credit card required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Invest in Your Future?</h2>
+            <p>Start your learning journey today and transform your career with AgenticMinds.</p>
+            <div class="hero-buttons">
+                <a href="courses.html" class="btn btn-primary">Browse Courses</a>
+                <a href="contact.html" class="btn btn-secondary" style="background-color: var(--white); color: var(--primary-green); border-color: var(--white);">Talk to Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AgenticMinds</h4>
+                <p>Leading AI training platform for professionals. Master cutting-edge technologies and advance your career.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgenticMinds. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

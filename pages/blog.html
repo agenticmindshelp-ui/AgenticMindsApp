@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the latest articles and insights on AI, machine learning, and professional development. Stay updated with AgenticMinds blog.">
+    <meta name="keywords" content="AI blog, machine learning articles, AI insights, tech education, professional development">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agenticminds.com/pages/blog.html">
+    <title>AI & Tech Blog - AgenticMinds | Industry Insights & Articles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .blog-card {
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .blog-card:hover {
+            box-shadow: 0 8px 20px rgba(45, 122, 74, 0.15);
+            transform: translateY(-5px);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--light-green), var(--accent-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2.5rem;
+        }
+        .blog-content {
+            padding: 25px;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            color: var(--medium-gray);
+        }
+        .blog-category {
+            display: inline-block;
+            background-color: var(--light-gray);
+            color: var(--primary-blue);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .blog-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Level Menu -->
+    <div style="background-color: var(--card-bg); border-bottom: 1px solid var(--border-gray); padding: 12px 20px;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-phone" style="color: var(--primary-green);"></i>
+                    <a href="tel:+1234567890" style="color: var(--light-gray); text-decoration: none;">+1 (234) 567-890</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-envelope" style="color: var(--primary-green);"></i>
+                    <a href="mailto:info@agenticminds.com" style="color: var(--light-gray); text-decoration: none;">info@agenticminds.com</a>
+                </div>
+            </div>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AgenticMinds</div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section style="background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(34, 197, 94, 0.1) 100%); color: var(--white); padding: 80px 20px; text-align: center; border-bottom: 2px solid var(--primary-green);">
+        <div class="container">
+            <h1 style="color: var(--white); margin-bottom: 20px;">AI Learning Blog</h1>
+            <p style="color: var(--light-gray); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Insights, tutorials, and industry trends from our AI experts.</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section>
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">📚</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Machine Learning</span>
+                            <span>Jan 15, 2026</span>
+                        </div>
+                        <h3><a href="blog-post.html" style="color: var(--dark-green);">Getting Started with Neural Networks</a></h3>
+                        <p class="text-secondary">A comprehensive beginner's guide to understanding and building your first neural network. Learn the fundamentals...</p>
+                        <a href="blog-post.html" class="text-primary" style="font-weight: 600;">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">🚀</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Career</span>
+                            <span>Jan 10, 2026</span>
+                        </div>
+                        <h3><a href="blog-post.html" style="color: var(--dark-green);">Top AI Skills Every Developer Should Learn in 2026</a></h3>
+                        <p class="text-secondary">Discover the most in-demand AI and machine learning skills to boost your career prospects in the coming year...</p>
+                        <a href="blog-post.html" class="text-primary" style="font-weight: 600;">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">🤖</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Industry News</span>
+                            <span>Jan 5, 2026</span>
+                        </div>
+                        <h3><a href="blog-post.html" style="color: var(--dark-green);">The Future of Generative AI in 2026</a></h3>
+                        <p class="text-secondary">Explore the latest trends and predictions for generative AI technology. What can we expect this year...</p>
+                        <a href="blog-post.html" class="text-primary" style="font-weight: 600;">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">💡</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Tutorial</span>
+                            <span>Dec 28, 2025</span>
+                        </div>
+                        <h3><a href="blog-post.html" style="color: var(--dark-green);">Building Production-Ready ML Models</a></h3>
+                        <p class="text-secondary">Learn best practices for deploying machine learning models to production environments with confidence...</p>
+                        <a href="blog-post.html" class="text-primary" style="font-weight: 600;">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">📊</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Data Science</span>
+                            <span>Dec 20, 2025</span>
+                        </div>
+                        <h3><a href="blog-post.html" style="color: var(--dark-green);">Data Preprocessing: The Foundation of ML</a></h3>
+                        <p class="text-secondary">Master the essential techniques for cleaning and preparing your data for machine learning projects...</p>
+                        <a href="blog-post.html" class="text-primary" style="font-weight: 600;">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">⚡</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Performance</span>
+                            <span>Dec 15, 2025</span>
+                        </div>
+                        <h3><a href="blog-post.html" style="color: var(--dark-green);">Optimizing Deep Learning Models for Speed</a></h3>
+                        <p class="text-secondary">Techniques and strategies to improve the performance and efficiency of your deep learning models...</p>
+                        <a href="blog-post.html" class="text-primary" style="font-weight: 600;">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Learn From Industry Experts</h2>
+            <p>Subscribe to our newsletter for weekly insights and stay updated with the latest in AI.</p>
+            <form style="display: flex; gap: 10px; max-width: 500px; margin: 30px auto;">
+                <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px; border: none; border-radius: 5px;">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AgenticMinds</h4>
+                <p>Leading AI training platform for professionals. Master cutting-edge technologies and advance your career.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgenticMinds. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

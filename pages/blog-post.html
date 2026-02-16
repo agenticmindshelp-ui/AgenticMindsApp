@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - AgenticMinds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <style>
+        .blog-post-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+        .blog-post-content {
+            background: var(--white);
+        }
+        .blog-post-content h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .blog-post-content p {
+            line-height: 1.8;
+        }
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .blog-post-content li {
+            margin-bottom: 10px;
+        }
+        .blog-meta-header {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-gray);
+            flex-wrap: wrap;
+        }
+        .blog-author {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .blog-author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--light-green), var(--accent-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+        .blog-author-info p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        .blog-sidebar {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+        .blog-sidebar h4 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .related-posts {
+            list-style: none;
+            margin-bottom: 0;
+        }
+        .related-posts li {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-gray);
+        }
+        .related-posts li:last-child {
+            border-bottom: none;
+        }
+        .related-posts a {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .blog-post-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AgenticMinds</div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Post Header -->
+    <section style="background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(34, 197, 94, 0.1) 100%); color: var(--white); padding: 60px 20px; border-bottom: 2px solid var(--primary-green);">
+        <div class="container">
+            <span style="display: inline-block; background: var(--accent-blue); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px;">Machine Learning</span>
+            <h1 style="color: var(--white); margin-bottom: 20px; margin-top: 0;">Getting Started with Neural Networks</h1>
+            <div class="blog-meta-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+                <div class="blog-author">
+                    <div class="blog-author-avatar">👨‍🏫</div>
+                    <div class="blog-author-info">
+                        <p style="color: var(--white); font-weight: 600; margin-bottom: 4px;">Dr. Marcus Johnson</p>
+                        <p style="color: var(--light-gray); margin-bottom: 0;">AI Researcher & Instructor</p>
+                    </div>
+                </div>
+                <div style="color: var(--light-gray);">Jan 15, 2026</div>
+                <div style="color: var(--light-gray);">8 min read</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section>
+        <div class="container">
+            <div class="blog-post-layout">
+                <article class="blog-post-content">
+                    <p style="font-size: 1.1rem; color: var(--medium-gray);">Neural networks are the backbone of modern deep learning and artificial intelligence. Whether you're a beginner just starting your AI journey or an experienced developer looking to understand this fundamental technology, this guide will provide you with the knowledge you need.</p>
+
+                    <h2>What Are Neural Networks?</h2>
+                    <p>A neural network is a computational model inspired by the biological neural networks in animal brains. It consists of interconnected nodes (neurons) organized in layers that process information and learn patterns from data. The power of neural networks lies in their ability to learn complex patterns from data without being explicitly programmed.</p>
+
+                    <h2>Key Components</h2>
+                    <p>To understand neural networks, you need to know about these essential components:</p>
+                    <ul>
+                        <li><strong>Neurons:</strong> The basic units that perform computations by taking input, applying weights, and passing results through an activation function.</li>
+                        <li><strong>Layers:</strong> Neurons are organized into input, hidden, and output layers. Hidden layers help the network learn complex patterns.</li>
+                        <li><strong>Weights and Biases:</strong> Parameters that the network learns during training to make accurate predictions.</li>
+                        <li><strong>Activation Functions:</strong> Non-linear functions like ReLU, sigmoid, and tanh that enable networks to learn complex patterns.</li>
+                    </ul>
+
+                    <h2>How Neural Networks Learn</h2>
+                    <p>Neural networks learn through a process called backpropagation. Here's how it works:</p>
+                    <ol>
+                        <li>The network makes a prediction using its current weights</li>
+                        <li>We compare the prediction to the actual answer, calculating the error</li>
+                        <li>We calculate how each weight contributed to that error</li>
+                        <li>We adjust weights to reduce the error</li>
+                        <li>We repeat this process many times until the network's predictions improve</li>
+                    </ol>
+
+                    <h2>Getting Started with Your First Network</h2>
+                    <p>To build your first neural network, you'll need:</p>
+                    <ul>
+                        <li><strong>Python:</strong> The most popular language for deep learning</li>
+                        <li><strong>TensorFlow/Keras:</strong> Popular frameworks that make building networks easier</li>
+                        <li><strong>Data:</strong> A dataset to train your network on</li>
+                        <li><strong>Patience:</strong> Training can take time, especially on larger datasets</li>
+                    </ul>
+
+                    <h2>Common Applications</h2>
+                    <p>Neural networks are used in countless real-world applications:</p>
+                    <ul>
+                        <li>Image recognition and computer vision</li>
+                        <li>Natural language processing and chatbots</li>
+                        <li>Speech recognition and audio processing</li>
+                        <li>Time series prediction and forecasting</li>
+                        <li>Recommendation systems</li>
+                    </ul>
+
+                    <h2>Challenges and Best Practices</h2>
+                    <p>While neural networks are powerful, they come with challenges. Here are some best practices to keep in mind:</p>
+                    <ul>
+                        <li><strong>Data Quality:</strong> Neural networks learn from data, so high-quality data is crucial</li>
+                        <li><strong>Overfitting:</strong> Be careful not to train your network too well on training data—it might not generalize</li>
+                        <li><strong>Computation:</strong> Training large networks requires significant computational resources</li>
+                        <li><strong>Hyperparameter Tuning:</strong> The performance depends heavily on choices like learning rate and network architecture</li>
+                    </ul>
+
+                    <h2>Conclusion</h2>
+                    <p>Neural networks are the foundation of modern artificial intelligence and deep learning. While they can seem complex at first, understanding their basic principles will help you build more effective AI solutions. Start with simple networks, experiment with different architectures, and gradually work your way up to more complex problems.</p>
+
+                    <p>Ready to dive deeper? Check out our comprehensive <a href="courses.html"><strong>Machine Learning course</strong></a> where you'll learn to build and deploy neural networks in real-world projects.</p>
+
+                    <div style="background: var(--light-gray); padding: 20px; border-radius: 8px; margin-top: 40px;">
+                        <h4 style="margin-top: 0;">Found this helpful?</h4>
+                        <p>Share this article with others who might benefit from learning about neural networks. Follow our blog for more AI insights and tutorials.</p>
+                    </div>
+                </article>
+
+                <aside class="blog-sidebar">
+                    <h4>About the Author</h4>
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--light-blue), var(--accent-blue)); border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--white);">👨‍🏫</div>
+                        <h4 style="margin: 0 0 10px;">Dr. Marcus Johnson</h4>
+                        <p style="margin: 0; font-size: 0.9rem;">AI researcher with 15+ years of experience in machine learning and deep learning.</p>
+                    </div>
+
+                    <h4 style="margin-top: 30px;">Related Posts</h4>
+                    <ul class="related-posts">
+                        <li><a href="#">Building Production-Ready ML Models</a></li>
+                        <li><a href="#">Data Preprocessing: The Foundation of ML</a></li>
+                        <li><a href="#">The Future of Generative AI in 2026</a></li>
+                        <li><a href="#">Top AI Skills Every Developer Should Learn</a></li>
+                    </ul>
+
+                    <h4 style="margin-top: 30px;">Categories</h4>
+                    <ul class="related-posts">
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Deep Learning</a></li>
+                        <li><a href="#">Career Development</a></li>
+                        <li><a href="#">Industry News</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section mt-40">
+        <div class="container">
+            <h2>Ready to Master Neural Networks?</h2>
+            <p>Learn from industry experts with our comprehensive deep learning courses.</p>
+            <div class="hero-buttons">
+                <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+                <a href="contact.html" class="btn btn-secondary" style="background-color: var(--white); color: var(--primary-green); border-color: var(--white);">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AgenticMinds</h4>
+                <p>Leading AI training platform for professionals. Master cutting-edge technologies and advance your career.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgenticMinds. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

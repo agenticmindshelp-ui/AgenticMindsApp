@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail - AgenticMinds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/courses.css">
+</head>
+<body>
+    <!-- Top Level Menu -->
+    <div style="background-color: var(--card-bg); border-bottom: 1px solid var(--border-gray); padding: 12px 20px;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-phone" style="color: var(--primary-green);"></i>
+                    <a href="tel:+1234567890" style="color: var(--light-gray); text-decoration: none;">+1 (234) 567-890</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-envelope" style="color: var(--primary-green);"></i>
+                    <a href="mailto:info@agenticminds.com" style="color: var(--light-gray); text-decoration: none;">info@agenticminds.com</a>
+                </div>
+            </div>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AgenticMinds</div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Course Hero -->
+    <section class="course-hero">
+        <div class="course-hero-content">
+            <span class="course-level" style="background: rgba(255,255,255,0.2); color: var(--white);">Intermediate Level</span>
+            <h1>Machine Learning Mastery</h1>
+            <p style="font-size: 1.1rem; color: var(--light-gray); margin: 15px 0 30px;">Deep dive into supervised and unsupervised learning algorithms, model evaluation, and optimization techniques.</p>
+            
+            <div class="course-info-bar">
+                <div class="course-info-item">
+                    <strong>8 Weeks</strong>
+                    Duration
+                </div>
+                <div class="course-info-item">
+                    <strong>Intermediate</strong>
+                    Level
+                </div>
+                <div class="course-info-item">
+                    <strong>45+ Hours</strong>
+                    Content
+                </div>
+                <div class="course-info-item">
+                    <strong>4.85/5</strong>
+                    Rating
+                </div>
+            </div>
+
+            <div class="course-price" style="font-size: 2rem; margin-top: 30px;">$299</div>
+            <a href="login.html" class="btn btn-primary" style="margin-top: 20px; padding: 15px 40px; font-size: 1.1rem;">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section style="padding: 60px 20px; background: var(--white);">
+        <div class="container">
+            <div class="course-details">
+                <div class="course-main">
+                    <h2>Course Overview</h2>
+                    <p>Machine Learning Mastery is a comprehensive course designed to take you from foundational concepts to advanced applications. You'll learn the algorithms that power modern AI and how to apply them to real-world problems.</p>
+
+                    <h2>What You'll Learn</h2>
+                    <ul>
+                        <li>Fundamentals of machine learning and different learning paradigms</li>
+                        <li>Supervised learning: regression and classification algorithms</li>
+                        <li>Unsupervised learning: clustering and dimensionality reduction</li>
+                        <li>Model evaluation, hyperparameter tuning, and validation techniques</li>
+                        <li>Handling imbalanced datasets and feature engineering</li>
+                        <li>Ensemble methods and advanced optimization techniques</li>
+                        <li>Real-world case studies and practical applications</li>
+                    </ul>
+
+                    <h2>Course Structure</h2>
+                    <p>The course is divided into 8 modules, each focusing on specific machine learning concepts:</p>
+                    <ol>
+                        <li><strong>Module 1:</strong> ML Fundamentals & Python Review (1 week)</li>
+                        <li><strong>Module 2:</strong> Regression Algorithms (1 week)</li>
+                        <li><strong>Module 3:</strong> Classification Algorithms (1.5 weeks)</li>
+                        <li><strong>Module 4:</strong> Unsupervised Learning (1.5 weeks)</li>
+                        <li><strong>Module 5:</strong> Model Evaluation & Validation (1 week)</li>
+                        <li><strong>Module 6:</strong> Advanced Techniques & Ensemble Methods (1 week)</li>
+                        <li><strong>Module 7:</strong> Real-World Projects (1 week)</li>
+                        <li><strong>Module 8:</strong> Capstone Project (1 week)</li>
+                    </ol>
+
+                    <h2>Who This Course Is For</h2>
+                    <ul>
+                        <li>Developers with Python experience looking to learn machine learning</li>
+                        <li>Data professionals wanting to deepen their ML knowledge</li>
+                        <li>Anyone interested in transitioning to a machine learning career</li>
+                        <li>Professionals wanting to understand ML for business applications</li>
+                    </ul>
+
+                    <h2>Prerequisites</h2>
+                    <ul>
+                        <li>Basic Python programming knowledge</li>
+                        <li>Understanding of linear algebra and statistics (will be reviewed)</li>
+                        <li>Any computer that can run Python and Jupyter notebooks</li>
+                    </ul>
+
+                    <h2>Project Based Learning</h2>
+                    <p>This course emphasizes hands-on learning through projects. You'll build multiple machine learning projects including:</p>
+                    <ul>
+                        <li>Housing price prediction using regression</li>
+                        <li>Customer churn prediction classification</li>
+                        <li>Customer segmentation clustering project</li>
+                        <li>Real-world capstone project of your choice</li>
+                    </ul>
+
+                    <h2>Instructor</h2>
+                    <p>This course is taught by Dr. Sarah Chen, an expert in machine learning with 10+ years of industry experience. She has worked with AI teams at leading tech companies and has a passion for making machine learning accessible to everyone.</p>
+                </div>
+
+                <div class="course-sidebar">
+                    <h3 style="margin-top: 0;">Course Highlights</h3>
+                    <ul class="course-highlights">
+                        <li>45+ hours of video content</li>
+                        <li>8 comprehensive modules</li>
+                        <li>20+ practical coding projects</li>
+                        <li>Downloadable resources & datasets</li>
+                        <li>Lifetime course access</li>
+                        <li>Professional certificate</li>
+                        <li>Community support forum</li>
+                        <li>30-day money back guarantee</li>
+                    </ul>
+
+                    <div style="background: var(--light-blue); color: var(--white); padding: 20px; border-radius: 8px; text-align: center; margin-top: 30px;">
+                        <h4 style="color: var(--white); margin-top: 0;">Still Have Questions?</h4>
+                        <p style="color: rgba(255,255,255,0.9); margin-bottom: 15px;">Talk to our course advisors about whether this course is right for you.</p>
+                        <a href="contact.html" class="btn btn-primary" style="background-color: var(--white); color: var(--primary-green);">Schedule Consultation</a>
+                    </div>
+
+                    <div style="margin-top: 30px; padding-top: 30px; border-top: 2px solid var(--border-gray);">
+                        <h4>Student Reviews</h4>
+                        <div style="margin-bottom: 15px;">
+                            <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 5px;">★★★★★</div>
+                            <p style="font-size: 0.9rem; margin: 0;"><strong>Amazing course!</strong></p>
+                            <p style="font-size: 0.85rem; color: var(--medium-gray); margin: 5px 0 0;">By Alex K.</p>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 5px;">★★★★★</div>
+                            <p style="font-size: 0.9rem; margin: 0;"><strong>Clear and practical</strong></p>
+                            <p style="font-size: 0.85rem; color: var(--medium-gray); margin: 5px 0 0;">By Sarah M.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Master Machine Learning?</h2>
+            <p>Join thousands of professionals who have advanced their careers with our courses.</p>
+            <div class="hero-buttons">
+                <a href="login.html" class="btn btn-primary">Enroll Now - $299</a>
+                <a href="contact.html" class="btn btn-secondary" style="background-color: var(--white); color: var(--primary-green); border-color: var(--white);">Ask Questions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AgenticMinds</h4>
+                <p>Leading AI training platform for professionals. Master cutting-edge technologies and advance your career.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgenticMinds. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

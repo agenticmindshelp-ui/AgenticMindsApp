@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive AI and machine learning courses. From fundamentals to advanced topics, find the perfect course for your skill level.">
+    <meta name="keywords" content="AI courses, machine learning, deep learning, agentic AI, online courses, professional training">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agenticminds.com/pages/courses.html">
+    <title>AI & Machine Learning Courses - AgenticMinds | Expert Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/courses.css">
+</head>
+<body>
+    <!-- Top Level Menu -->
+    <div style="background-color: var(--card-bg); border-bottom: 1px solid var(--border-gray); padding: 12px 20px;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-phone" style="color: var(--primary-green);"></i>
+                    <a href="tel:+1234567890" style="color: var(--light-gray); text-decoration: none;">+1 (234) 567-890</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--light-gray); font-size: 0.9rem;">
+                    <i class="fas fa-envelope" style="color: var(--primary-green);"></i>
+                    <a href="mailto:info@agenticminds.com" style="color: var(--light-gray); text-decoration: none;">info@agenticminds.com</a>
+                </div>
+            </div>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" style="color: var(--light-gray); font-size: 1rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-green)'" onmouseout="this.style.color='var(--light-gray)'">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AgenticMinds</div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Learn AI and automation from industry experts. Choose from beginner to advanced levels.</p>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <section>
+        <div class="container">
+            <h2 style="margin-top: 0;">Filter Courses</h2>
+            <div class="course-filters">
+                <button class="filter-btn active" onclick="filterCourses('all')">All Courses</button>
+                <button class="filter-btn" onclick="filterCourses('beginner')">Beginner</button>
+                <button class="filter-btn" onclick="filterCourses('intermediate')">Intermediate</button>
+                <button class="filter-btn" onclick="filterCourses('advanced')">Advanced</button>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="courses-grid">
+                <!-- Beginner Courses -->
+                <div class="course-card" data-level="beginner">
+                    <div class="course-image">🤖</div>
+                    <div class="course-content">
+                        <span class="course-level">Beginner</span>
+                        <h3>AI Fundamentals</h3>
+                        <p class="course-description">Start your AI journey with core concepts, Python fundamentals, and essential machine learning principles.</p>
+                        <div class="course-meta">
+                            <span>📚 6 Weeks</span>
+                            <span>⭐ 4.8/5</span>
+                        </div>
+                        <div class="course-price">$199</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="beginner">
+                    <div class="course-image">📊</div>
+                    <div class="course-content">
+                        <span class="course-level">Beginner</span>
+                        <h3>Data Science Basics</h3>
+                        <p class="course-description">Learn data analysis, visualization, and statistical foundations needed for AI and machine learning.</p>
+                        <div class="course-meta">
+                            <span>📚 5 Weeks</span>
+                            <span>⭐ 4.7/5</span>
+                        </div>
+                        <div class="course-price">$179</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="beginner">
+                    <div class="course-image">🐍</div>
+                    <div class="course-content">
+                        <span class="course-level">Beginner</span>
+                        <h3>Python for AI</h3>
+                        <p class="course-description">Master Python programming with focus on libraries used in artificial intelligence and machine learning projects.</p>
+                        <div class="course-meta">
+                            <span>📚 4 Weeks</span>
+                            <span>⭐ 4.9/5</span>
+                        </div>
+                        <div class="course-price">$189</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Intermediate Courses -->
+                <div class="course-card" data-level="intermediate">
+                    <div class="course-image">🧠</div>
+                    <div class="course-content">
+                        <span class="course-level">Intermediate</span>
+                        <h3>Machine Learning Mastery</h3>
+                        <p class="course-description">Deep dive into supervised and unsupervised learning algorithms, model evaluation, and optimization techniques.</p>
+                        <div class="course-meta">
+                            <span>📚 8 Weeks</span>
+                            <span>⭐ 4.85/5</span>
+                        </div>
+                        <div class="course-price">$299</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="intermediate">
+                    <div class="course-image">🎨</div>
+                    <div class="course-content">
+                        <span class="course-level">Intermediate</span>
+                        <h3>Neural Networks & Computer Vision</h3>
+                        <p class="course-description">Build and train neural networks for image recognition, object detection, and advanced computer vision applications.</p>
+                        <div class="course-meta">
+                            <span>📚 8 Weeks</span>
+                            <span>⭐ 4.8/5</span>
+                        </div>
+                        <div class="course-price">$349</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="intermediate">
+                    <div class="course-image">💬</div>
+                    <div class="course-content">
+                        <span class="course-level">Intermediate</span>
+                        <h3>Natural Language Processing</h3>
+                        <p class="course-description">Master NLP techniques for text analysis, sentiment analysis, language models, and chatbot development.</p>
+                        <div class="course-meta">
+                            <span>📚 7 Weeks</span>
+                            <span>⭐ 4.75/5</span>
+                        </div>
+                        <div class="course-price">$329</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Advanced Courses -->
+                <div class="course-card" data-level="advanced">
+                    <div class="course-image">⚡</div>
+                    <div class="course-content">
+                        <span class="course-level">Advanced</span>
+                        <h3>Advanced Deep Learning</h3>
+                        <p class="course-description">Explore cutting-edge deep learning architectures, transfer learning, GANs, and state-of-the-art techniques.</p>
+                        <div class="course-meta">
+                            <span>📚 10 Weeks</span>
+                            <span>⭐ 4.9/5</span>
+                        </div>
+                        <div class="course-price">$499</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="advanced">
+                    <div class="course-image">⚙️</div>
+                    <div class="course-content">
+                        <span class="course-level">Advanced</span>
+                        <h3>AI Model Deployment & MLOps</h3>
+                        <p class="course-description">Learn to deploy AI models to production, monitor performance, scale applications, and implement CI/CD pipelines.</p>
+                        <div class="course-meta">
+                            <span>📚 9 Weeks</span>
+                            <span>⭐ 4.85/5</span>
+                        </div>
+                        <div class="course-price">$449</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="advanced">
+                    <div class="course-image">🤔</div>
+                    <div class="course-content">
+                        <span class="course-level">Advanced</span>
+                        <h3>Reinforcement Learning & AI Agents</h3>
+                        <p class="course-description">Master reinforcement learning algorithms, game AI, autonomous systems, and intelligent agent development.</p>
+                        <div class="course-meta">
+                            <span>📚 10 Weeks</span>
+                            <span>⭐ 4.7/5</span>
+                        </div>
+                        <div class="course-price">$479</div>
+                        <a href="course-detail.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need Help Choosing?</h2>
+            <p>Our course advisors can help you find the perfect learning path based on your goals and experience level.</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+                <a href="pricing.html" class="btn btn-secondary" style="background-color: var(--white); color: var(--primary-green); border-color: var(--white);">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AgenticMinds</h4>
+                <p>Leading AI training platform for professionals. Master cutting-edge technologies and advance your career.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgenticMinds. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/nav.js"></script>
+    <script>
+        function filterCourses(level) {
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Filter courses
+            const cards = document.querySelectorAll('.course-card');
+            cards.forEach(card => {
+                if (level === 'all' || card.dataset.level === level) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
